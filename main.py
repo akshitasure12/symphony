@@ -6,7 +6,8 @@ from cvzone.HandTrackingModule import HandDetector
 
 #Initialise PyGame Midi
 pygame.midi.init()
-player = pygame.midi.output(0)
+output_id = pygame.midi.get_default_output_id()
+player = pygame.midi.Output(output_id)
 player.set_instrument(0) #Predefined number for grand piano
 
 # 0 points tot the default camera in cv2

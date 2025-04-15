@@ -1,0 +1,101 @@
+.container {
+  min-height: 100vh;
+  background-color: #3E2F23;
+  color: white;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.nav {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 0.875rem;
+}
+
+.navLink:hover {
+  opacity: 0.8;
+}
+
+.mainSection {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 80vh;
+  overflow: hidden;
+}
+
+.contentContainer {
+  position: relative;
+  width: 1728px;
+  height: 400px;
+  margin: 0 auto;
+  margin-right: 165px;
+}
+
+.decorativeLine {
+  position: absolute;
+  left: 0;
+  width: 1728.5px;
+  height: 20px;
+  background: linear-gradient(to right, rgba(168, 132, 94, 0.4), rgba(168, 132, 94, 0.2));
+  box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+}
+
+.contentWrapper {
+  position: absolute;
+  left: 165px;
+}
+
+/* Base text styles */
+.playText,
+.yourOwnText,
+.symphonyText {
+  width: 649px;
+  font-family: Montserrat;
+  line-height: 122%;
+  letter-spacing: 0%;
+  font-weight: 600;
+}
+
+.playText {
+  height: 78px;
+  font-size: 64px;
+  color: white;
+  margin-top: 27px;
+}
+
+.yourOwnText {
+  height: 78px;
+  font-size: 64px;
+  color: white;
+  margin-top: 25px;
+}
+
+.symphonyText {
+  height: 146px;
+  font-size: 120px;
+  color: #E8D1A7;
+  margin-top: -20px;
+}
+
+.tryNowButton {
+  position: absolute;
+  top: 318px;
+  width: 120px;
+  height: 45px;
+  background-color: #F5E4D7;
+  color: #3E2F23;
+  font-size: 0.875rem;
+  border-radius: 9999px;
+  transition: opacity 0.2s;
+}
+
+.tryNowButton:hover {
+  opacity: 0.9;
+} 
