@@ -60,10 +60,10 @@ export const Guitar = (props: React.SVGProps<SVGSVGElement>) => (
 
 export const Scale = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width="77" height="78" viewBox="0 0 77 78" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M6.4165 10.2847H70.5832" stroke="#E8D1A7" stroke-width="7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-    <path d="M6.4165 29.5347H35.2915" stroke="#E8D1A7" stroke-width="7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-    <path d="M6.4165 48.7847H25.6665" stroke="#E8D1A7" stroke-width="7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-    <path d="M6.4165 68.0347H19.2498" stroke="#E8D1A7" stroke-width="7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M6.4165 10.2847H70.5832" stroke="#E8D1A7" strokeWidth="7" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
+    <path d="M6.4165 29.5347H35.2915" stroke="#E8D1A7" strokeWidth="7" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
+    <path d="M6.4165 48.7847H25.6665" stroke="#E8D1A7" strokeWidth="7" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
+    <path d="M6.4165 68.0347H19.2498" stroke="#E8D1A7" strokeWidth="7" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
     <path d="M37.9875 71.2432C41.85 71.2432 44.9816 68.1119 44.9816 64.2491C44.9816 60.3862 41.85 57.2549 37.9875 57.2549C34.1246 57.2549 30.9932 60.3862 30.9932 64.2491C30.9932 68.1119 34.1246 71.2432 37.9875 71.2432Z" stroke="#E8D1A7" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
     <path d="M70.582 59.5964V32.2936C70.582 26.4865 66.9245 25.6844 63.2349 26.679L49.2787 30.4969C46.7441 31.2027 44.9795 33.1918 44.9795 36.1114V40.9884V44.2609V64.2488" stroke="#E8D1A7" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
     <path d="M63.5913 66.5906C67.4542 66.5906 70.5855 63.4593 70.5855 59.5965C70.5855 55.734 67.4542 52.6023 63.5913 52.6023C59.7285 52.6023 56.5972 55.734 56.5972 59.5965C56.5972 63.4593 59.7285 66.5906 63.5913 66.5906Z" stroke="#E8D1A7" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
