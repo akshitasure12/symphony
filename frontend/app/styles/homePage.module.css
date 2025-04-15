@@ -70,7 +70,6 @@
   left: 165px;
 }
 
-/* Base text styles */
 .playText,
 .yourOwnText,
 .symphonyText {
@@ -96,7 +95,7 @@
 }
 
 .symphonyText {
-  height: 146px;
+  height: 133px;
   font-size: 120px;
   color: #E8D1A7;
   margin-top: -20px;
@@ -344,4 +343,125 @@
   color: #482E1D;
   opacity: 0.9;
   line-height: 1.5;
+}
+
+.p4Container {
+  background-color: #442D1C;
+  padding: 8rem 2rem;
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.p4Content {
+  max-width: 1200px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.p4Heading {
+  font-size: 5rem;
+  font-weight: 600;
+  color: #E8D1A7;
+  margin-bottom: 2rem;
+}
+
+.p4Description {
+  font-size: 1.5rem;
+  color: #FFFFFF;
+  max-width: 800px;
+  margin: 0 auto 4rem;
+  line-height: 1.6;
+}
+
+.p4Description p {
+  margin-bottom: 1rem;
+}
+
+.soundWaveContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  margin-top: 4rem;
+  position: relative;
+}
+
+.leftWave,
+.rightWave {
+  opacity: 0.6;
+  position: absolute;
+  z-index: 1;
+}
+
+.leftWave {
+  right: 50%;
+  transform: translateX(-24px);
+  margin-right: 5px;
+}
+
+.rightWave {
+  left: 50%;
+  transform: translateX(24px);
+  margin-left: 5px;
+}
+
+.startButton {
+  position: relative;
+  z-index: 2;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: linear-gradient(145deg, #E8D1A7 0%, #D4B48C 100%);
+  border: 2px solid #E8D1A7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #442D1C;
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 2rem;
+  gap: 0.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.startButton::before {
+  content: '';
+  position: absolute;
+  top: -12px;
+  left: -12px;
+  right: -12px;
+  bottom: -12px;
+  border: 2px solid #E8D1A7;
+  border-radius: 50%;
+  opacity: 0.5;
+  z-index: 2;
+}
+
+.startButton:hover {
+  transform: scale(1.05);
+  background: #442D1C;
+  color: #E8D1A7;
+}
+
+.startButton:hover::before {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+.headphoneIcon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.p4symphonyText {
+  font-size: 1.5rem;
+  font-weight: 600;
 } 
