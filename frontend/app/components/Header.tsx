@@ -3,7 +3,7 @@ import styles from '../styles/homePage.module.css';
 
 const Header = () => (
   <header className={styles.header}>
-    <h1 className="text-xl font-light">symphony</h1>
+    <h1 className={styles.logo}>symphony</h1>
     <nav className={styles.nav}>
       <a href="#" className={styles.navLink}>play music</a>
       <a href="#" className={styles.navLink}>about us</a>

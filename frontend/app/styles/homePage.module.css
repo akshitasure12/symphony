@@ -15,10 +15,24 @@
   padding: 1rem 2rem;
 }
 
+.logo {
+  font-size: 1.25rem;
+  font-weight: 600;
+  position: fixed;
+  top: 1rem;
+  left: 2rem;
+  z-index: 1000;
+  color: #FFFFFF;
+}
+
 .nav {
   display: flex;
   gap: 1.5rem;
   font-size: 0.875rem;
+  position: fixed;
+  top: 1rem;
+  right: 2rem;
+  z-index: 1000;
 }
 
 .navLink:hover {
@@ -226,4 +240,94 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.p3Container {
+  background-color: #E8D1A7;
+  padding: 6rem 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.p3Content {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.p3Heading {
+  font-size: 3.5rem;
+  font-weight: 600;
+  color: #482E1D;
+  margin-bottom: 1.5rem;
+}
+
+.p3Description {
+  font-size: 1.25rem;
+  color: #482E1D;
+  max-width: 600px;
+  margin-bottom: 4rem;
+  line-height: 1.6;
+}
+
+.stepsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  position: relative;
+}
+
+.stepsContainer::before {
+  content: '';
+  position: absolute;
+  left: 2rem;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: #482E1D;
+  opacity: 0.2;
+}
+
+.step {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  position: relative;
+}
+
+.stepIcon {
+  width: 4rem;
+  height: 4rem;
+  background-color: #482E1D;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  z-index: 1;
+}
+
+.stepIcon svg {
+  width: 24px;
+  height: 24px;
+  stroke: #E8D1A7;
+}
+
+.stepContent {
+  padding-top: 0.5rem;
+}
+
+.stepContent h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #482E1D;
+  margin-bottom: 0.5rem;
+}
+
+.stepContent p {
+  font-size: 1.125rem;
+  color: #482E1D;
+  opacity: 0.9;
+  line-height: 1.5;
 } 

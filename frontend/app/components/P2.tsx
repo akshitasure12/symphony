@@ -1,7 +1,7 @@
 import React from "react";
 import { Montserrat } from 'next/font/google';
 import styles from '../styles/homePage.module.css';
-import {PianoIcon, BrainIcon, HeartIcon} from "./icons";
+import {Piano, Brain, Heart} from "./icons";
 
 const montserrat = Montserrat({ 
   subsets: ['latin'], 
@@ -21,7 +21,7 @@ const P2 = () => (
       <div className={styles.featureCards}>
         <div className={styles.featureCard}>
           <div className={styles.featureIcon}>
-            <PianoIcon />
+            <Piano />
           </div>
           <h3>Play Freely</h3>
           <p>Choose from X instruments, no skills required.</p>
@@ -29,7 +29,7 @@ const P2 = () => (
         
         <div className={styles.featureCard}>
           <div className={styles.featureIcon}>
-            <BrainIcon />
+            <Brain />
           </div>
           <h3>Intuitive Feel</h3>
           <p>Built for humans, not musicians.</p>
@@ -37,7 +37,7 @@ const P2 = () => (
         
         <div className={styles.featureCard}>
           <div className={styles.featureIcon}>
-            <HeartIcon />
+            <Heart />
           </div>
           <h3>Accessible for All</h3>
           <p>Designed for everyone - especially those who can't play traditionally.</p>
