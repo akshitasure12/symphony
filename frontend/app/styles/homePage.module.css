@@ -248,6 +248,26 @@
   overflow: hidden;
 }
 
+.backgroundDetail {
+  position: absolute;
+  left: 98px;
+  top: 0;
+  bottom: 0;
+  z-index: 0;
+}
+
+.backgroundDetail svg {
+  height: 100%;
+  width: auto;
+}
+
+.backgroundDetail path {
+  stroke: url(#paint0_linear_20_98);
+  stroke-width: 5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
 .p3Content {
   max-width: 1200px;
   margin: 0 auto;
@@ -464,4 +484,14 @@
 .p4symphonyText {
   font-size: 1.5rem;
   font-weight: 600;
+}
+
+.overlappingDetail {
+  position: absolute;
+  z-index: 1;
+}
+
+.overlappingDetail svg {
+  height: 100%;
+  width: 100%;
 } 
