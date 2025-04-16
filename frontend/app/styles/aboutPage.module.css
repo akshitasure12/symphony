@@ -1,0 +1,53 @@
+.container {
+  min-height: 100vh;
+  background-color: #3E2F23;
+  color: white;
+  width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.aboutSection {
+  padding: 8rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+}
+
+.content {
+  max-width: 800px;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.heading {
+  font-size: 4rem;
+  font-weight: 600;
+  color: #E8D1A7;
+  margin-bottom: 3rem;
+  line-height: 1.2;
+}
+
+.description {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: #FFFFFF;
+}
+
+.description p {
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+.description h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #E8D1A7;
+  margin: 3rem 0 1.5rem;
+}
+
+.description h2:first-of-type {
+  margin-top: 4rem;
+} 

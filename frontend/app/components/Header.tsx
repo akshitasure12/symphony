@@ -1,12 +1,13 @@
 import React from 'react';
+import Link from 'next/link';
 import styles from '../styles/homePage.module.css';
 
 const Header = () => (
   <header className={styles.header}>
-    <h1 className={styles.logo}>symphony</h1>
+    <Link href="/" className={styles.logo}>symphony</Link>
     <nav className={styles.nav}>
-      <a href="#" className={styles.navLink}>play music</a>
-      <a href="#" className={styles.navLink}>about us</a>
+      <Link href="/" className={styles.navLink}>play music</Link>
+      <Link href="/aboutus" className={styles.navLink}>about us</Link>
     </nav>
   </header>
 );
