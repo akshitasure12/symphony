@@ -46,34 +46,40 @@
   justify-content: center;
   min-height: 80vh;
   overflow: hidden;
+  padding: 2rem;
 }
 
 .contentContainer {
   position: relative;
-  width: 1728px;
-  height: 400px;
+  width: 100%;
+  max-width: 1728px;
+  height: auto;
   margin: 0 auto;
-  margin-right: 165px;
+  overflow: visible;
 }
 
 .decorativeLine {
   position: absolute;
-  left: 0;
-  width: 1728.5px;
+  left: -50vw;
+  right: -50vw;
+  width: 200vw;
   height: 20px;
   background: linear-gradient(to right, rgba(168, 132, 94, 0.4), rgba(168, 132, 94, 0.2));
   box-shadow: 0 2px 4px rgba(0,0,0,0.15);
 }
 
 .contentWrapper {
-  position: absolute;
-  left: 165px;
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
 }
 
 .playText,
 .yourOwnText,
 .symphonyText {
-  width: 649px;
+  width: 100%;
+  max-width: 649px;
   font-family: Montserrat;
   line-height: 122%;
   letter-spacing: 0%;
@@ -81,29 +87,25 @@
 }
 
 .playText {
-  height: 78px;
-  font-size: 64px;
+  font-size: clamp(2.5rem, 5vw, 4rem);
   color: white;
   margin-top: 27px;
 }
 
 .yourOwnText {
-  height: 78px;
-  font-size: 64px;
+  font-size: clamp(2.5rem, 5vw, 4rem);
   color: white;
   margin-top: 25px;
 }
 
 .symphonyText {
-  height: 133px;
-  font-size: 120px;
+  font-size: clamp(3.5rem, 7vw, 7.5rem);
   color: #E8D1A7;
   margin-top: -20px;
 }
 
 .tryNowButton {
-  position: absolute;
-  top: 318px;
+  position: relative;
   width: 120px;
   height: 45px;
   background-color: #F5E4D7;
@@ -111,6 +113,7 @@
   font-size: 0.875rem;
   border-radius: 9999px;
   transition: opacity 0.2s;
+  margin-top: 2rem;
 }
 
 .tryNowButton:hover {
@@ -153,10 +156,11 @@
   text-align: center;
   position: relative;
   z-index: 1;
+  padding: 0 1rem;
 }
 
 .p2Heading {
-  font-size: 4rem;
+  font-size: clamp(2.5rem, 5vw, 4rem);
   font-weight: 600;
   text-align: left;
   margin-bottom: 2rem;
@@ -168,7 +172,7 @@
 }
 
 .p2Description {
-  font-size: 1.5rem;
+  font-size: clamp(1rem, 2vw, 1.5rem);
   margin-bottom: 4rem;
   line-height: 1.6;
   text-align: left;
@@ -179,15 +183,18 @@
 
 .featureCards {
   display: grid;
-  grid-template-columns: repeat(3, 250px);
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
   margin-top: 3rem;
   justify-content: center;
+  padding: 0 1rem;
 }
 
 .featureCard {
-  width: 250px;
-  height: 321px;
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  min-height: 321px;
   background-color: #E8D1A7;
   padding: 2rem;
   border-radius: 30px;
@@ -196,6 +203,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0 auto;
 }
 
 .featureCard:hover {
@@ -246,14 +254,19 @@
   padding: 6rem 2rem;
   position: relative;
   overflow: hidden;
+  min-height: 100vh;
+}
+
+.backgroundDetails {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
 }
 
 .backgroundDetail {
   position: absolute;
-  left: 98px;
-  top: 0;
-  bottom: 0;
-  z-index: 0;
+  height: 100%;
+  opacity: 0.5;
 }
 
 .backgroundDetail svg {
@@ -274,32 +287,35 @@
   position: relative;
   z-index: 1;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   gap: 4rem;
+  padding: 0 1rem;
+}
+
+@media (min-width: 768px) {
+  .p3Content {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
 }
 
 .p3TextContent {
   flex: 1;
   max-width: 500px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
 }
 
 .p3Heading {
-  font-size: 3.5rem;
+  font-size: clamp(2rem, 4vw, 3.5rem);
   font-weight: 600;
   color: #482E1D;
-  margin-top: 10rem;
   margin-bottom: 2rem;
-  text-align: left;
 }
 
 .p3Description {
-  font-size: 1.25rem;
+  font-size: clamp(1rem, 1.5vw, 1.25rem);
   color: #482E1D;
   line-height: 1.6;
-  text-align: left;
 }
 
 .stepsContainer {
@@ -382,17 +398,18 @@
   text-align: center;
   position: relative;
   z-index: 1;
+  padding: 0 1rem;
 }
 
 .p4Heading {
-  font-size: 5rem;
+  font-size: clamp(3rem, 6vw, 5rem);
   font-weight: 600;
   color: #E8D1A7;
   margin-bottom: 2rem;
 }
 
 .p4Description {
-  font-size: 1.5rem;
+  font-size: clamp(1rem, 2vw, 1.5rem);
   color: #FFFFFF;
   max-width: 800px;
   margin: 0 auto 4rem;
@@ -410,6 +427,7 @@
   gap: 0;
   margin-top: 4rem;
   position: relative;
+  padding: 0 1rem;
 }
 
 .leftWave,
@@ -494,4 +512,76 @@
 .overlappingDetail svg {
   height: 100%;
   width: 100%;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+  .header {
+    padding: 1rem;
+  }
+
+  .logo {
+    left: 1rem;
+  }
+
+  .nav {
+    right: 1rem;
+  }
+
+  .contentWrapper {
+    padding: 0 1rem;
+  }
+
+  .featureCards {
+    grid-template-columns: 1fr;
+  }
+
+  .backgroundDetail {
+    opacity: 0.3;
+  }
+
+  .soundWaveContainer svg {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .mainSection {
+    padding: 1rem;
+  }
+
+  .p2Container,
+  .p3Container,
+  .p4Container {
+    padding: 4rem 1rem;
+  }
+
+  .p4Description {
+    padding: 0 1rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .featureCards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Ensure text remains readable on very small screens */
+@media (max-width: 320px) {
+  .playText,
+  .yourOwnText {
+    font-size: 2rem;
+  }
+
+  .symphonyText {
+    font-size: 3rem;
+  }
+
+  .p2Heading,
+  .p3Heading,
+  .p4Heading {
+    font-size: 2rem;
+  }
 } 
