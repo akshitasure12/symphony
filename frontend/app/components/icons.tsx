@@ -101,7 +101,7 @@ export const LeftSquiggle = (props: React.SVGProps<SVGSVGElement>) => (
     <defs>
       <linearGradient id="paint0_linear_26_59" x1="693" y1="102.203" x2="1" y2="102.203" gradientUnits="userSpaceOnUse">
       <stop stopColor="#E8D1A7"/>
-      <stop offset="1" stop-color="#482E1D"/>
+      <stop offset="1" stopColor="#482E1D"/>
       </linearGradient>
     </defs>
   </svg>
