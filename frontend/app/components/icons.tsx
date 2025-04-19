@@ -113,7 +113,7 @@ export const Headphones = (props: React.SVGProps<SVGSVGElement>) => (
 </svg>
 );
 
-export const BackgroundDetail = () => (
+export const BackgroundDetail = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width="200" height="1117" viewBox="0 0 200 1117" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M156.003 0C156.003 0 215.341 163.995 191.241 333.337C172.017 468.42 32.8916 610.031 11.7228 769.927C-17.5489 991.028 36.2336 1117 36.2336 1117" stroke="url(#paint0_linear_20_98)" strokeWidth="5" strokeLinecap="round" strokeLinejoin="round"/>
     <defs>
@@ -125,4 +125,8 @@ export const BackgroundDetail = () => (
   </svg>
 );
 
-
+export const AboutUsBackdrop = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg width="1728" height="1114" viewBox="0 0 1728 1114" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M529.5 1112.5C295.5 1137.5 0 807 0 807V-0.5L1728 0V925C1728 925 1647.5 1018 1524 1030.5C1400.5 1043 1374.71 901.5 1091.5 913C808.294 924.5 763.5 1087.5 529.5 1112.5Z" fill="#84592B" fill-opacity="0.3"/>
+  </svg>
+);
