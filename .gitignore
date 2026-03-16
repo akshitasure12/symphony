@@ -1,2 +1,8 @@
 symphony/
 .DS_Store
+
+backend/venv
+__pycache__/
+
+backend/datasets/*
+backend/assets/chords/*
