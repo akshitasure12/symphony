@@ -2,6 +2,7 @@ symphony/
 .DS_Store
 
 backend/venv
+backend/.venv
 __pycache__/
 
 backend/datasets/*

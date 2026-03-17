@@ -4,6 +4,7 @@ tensorflow
 fastapi
 uvicorn
 numpy
+pygame
 scikit-learn
 kagglehub
 simpleaudio
