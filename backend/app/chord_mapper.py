@@ -1,6 +1,5 @@
-import pygame
-import time
 import joblib
+import pygame
 
 model = joblib.load("models/chord_classifier.pkl")
 
@@ -25,19 +24,7 @@ chord_sounds = {
     for chord in label_to_chord.values()
 }
 
-current_chord = None
-last_play_time = 0
-PLAY_DURATION = 1.0  
-
 def process_prediction(landmarks):
-    global current_chord, last_play_time
     predicted_label = model.predict([landmarks])[0]
     chord_name = label_to_chord[predicted_label]
-
-    now = time.time()
-    if chord_name != current_chord:
-        pygame.mixer.stop()
-        chord_sounds[chord_name].play()
-        current_chord = chord_name
-        last_play_time = now
     return chord_name
