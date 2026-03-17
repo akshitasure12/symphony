@@ -3,7 +3,7 @@ import numpy as np
 import time
 import pygame
 from hand_tracker import HandTracker
-from chord_mapper import process_prediction  
+from chord_mapper import process_prediction, chord_sounds
 import os
 import sys
 os.environ["QT_QPA_PLATFORM"] = "xcb"
